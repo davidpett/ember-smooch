@@ -17,7 +17,13 @@ module.exports = {
       email: null,
       properties: null
     };
-    return self.addPackagesToProject(['ember-browserify', 'smooch'])
+    return self.addPackagesToProject([{
+      name: 'ember-browserify',
+      target: '1.1.6'
+    }, {
+      name: 'smooch',
+      target: '^2.1.6'
+    }])
     .then(function() {
       return self.addToConfig('smooch', '\'' + smoochProps + '\'');
     })
