@@ -29,7 +29,7 @@ module.exports = {
       target: '^2.1.6'
     }])
     .then(function() {
-      return self.addToConfig('smooch', '\'' + smoochProps + '\'');
+      return self.addToConfig('smooch', smoochProps);
     })
     .then(function() {
       var output = EOL;
