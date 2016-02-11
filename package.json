@@ -52,8 +52,10 @@
     "smooch"
   ],
   "dependencies": {
+    "ember-cli-babel": "^5.1.5",
     "chalk": "^1.1.1",
-    "ember-cli-babel": "^5.1.5"
+    "fs-extra": "0.22.1",
+    "rsvp": "3.0.18"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
