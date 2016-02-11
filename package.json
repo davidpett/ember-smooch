@@ -1,6 +1,6 @@
 {
   "name": "ember-smooch",
-  "version": "0.0.2-beta.6",
+  "version": "0.0.2-beta.7",
   "description": "Easily add smooch.io to your application",
   "directories": {
     "doc": "doc",
