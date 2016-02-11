@@ -13,13 +13,7 @@ module.exports = {
 
   afterInstall: function(options) {
     var self = this;
-    var smoochProps = {
-      appToken: null,
-      givenName: null,
-      surname: null,
-      email: null,
-      properties: null
-    };
+    var smoochAppToken = options.appToken || 'YOUR APP TOKEN HERE';
 
     return self.addPackagesToProject([{
       name: 'ember-browserify',
@@ -29,7 +23,7 @@ module.exports = {
       target: '^2.1.6'
     }])
     .then(function() {
-      return self.addToConfig('smooch', JSON.stringify(smoochProps));
+      return self.addToConfig('smoochAppToken', '\'' + smoochAppToken + '\'');
     })
     .then(function() {
       var output = EOL;
@@ -40,7 +34,7 @@ module.exports = {
 
   addToConfig: function (key, value) {
     var self = this;
-    return this.fileContains('config/environment.js', key + ':').then(function (contains) {
+    return this.fileContains('config/environment.js', key + ':').then(function(contains) {
       if (contains) { return true; }
 
       var options = { after: '    environment: environment,' + EOL };
