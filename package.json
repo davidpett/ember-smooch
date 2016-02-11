@@ -1,7 +1,7 @@
 {
   "name": "ember-smooch",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Easily add smooch.io to your application",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,18 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davidpett/ember-smooch.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": {
+    "name": "David Pett",
+    "email": "me@davidpett.com",
+    "url": "http://davidpett.com/"
+  },
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",

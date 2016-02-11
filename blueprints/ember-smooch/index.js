@@ -16,14 +16,11 @@ module.exports = {
       email: null,
       properties: null
     };
-    return self.addPackagesToProject(['ember-browserify', 'smooch'])
-    .then(function() {
-      return self.addToConfig('smooch', '\'' + smoochProps + '\'');
-    })
+    return self.addPackageToProject('ember-browserify')
     .then(function() {
       var output = EOL;
       output += chalk.yellow('Ember Smooch') + ' has been installed. Please configure your smooch appToken in ' + chalk.green('config/environment.js') + EOL;
       console.log(output);
-    });;
+    });
   }
 };
