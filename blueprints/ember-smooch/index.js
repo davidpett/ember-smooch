@@ -13,7 +13,7 @@ module.exports = {
 
   afterInstall: function(options) {
     var self = this;
-    var smoochAppToken = options.appToken || 'YOUR APP TOKEN HERE';
+    var smoochAppToken = options.appToken || 'YOUR-SMOOCH-APP-TOKEN';
 
     return self.addPackagesToProject([{
       name: 'ember-browserify'

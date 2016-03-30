@@ -1,26 +1,21 @@
-# Ember-smooch
+[![Build Status](https://travis-ci.org/davidpett/ember-smooch.svg?branch=master)](https://travis-ci.org/davidpett/ember-smooch)
+[![npm version](https://badge.fury.io/js/ember-smooch.svg)](https://badge.fury.io/js/ember-smooch)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-smooch.svg)](http://emberobserver.com/addons/ember-smooch)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+# ember-smooch
 
-This README outlines the details of collaborating on this Ember addon.
+This wraps the web sdk for [smooch](http://smooch.io) and adds it to your project
 
-## Installation
+## Setup in your app
+```
+ember install ember-smooch
+```
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+After installing the addon, configure your Smooch App Token in `config/environment.js`:
+```
+smoochAppToken: 'YOUR-SMOOCH-APP-TOKEN',
+```
 
-## Running
+Once configured, you are good to go. You should see the widget in the bottom right of your screen.
 
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+For more information about smooch, please see their website at [smooch.io](http://smooch.io)
