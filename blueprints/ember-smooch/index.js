@@ -15,16 +15,7 @@ module.exports = {
     var self = this;
     var smoochAppToken = options.appToken || 'YOUR APP TOKEN HERE';
 
-    return self.addPackagesToProject([{
-      name: 'ember-browserify',
-      target: '1.1.6'
-    }, {
-      name: 'smooch',
-      target: '^2.1.6'
-    }])
-    .then(function() {
-      return self.addToConfig('smoochAppToken', '\'' + smoochAppToken + '\'');
-    })
+    return self.addToConfig('smoochAppToken', '\'' + smoochAppToken + '\'')
     .then(function() {
       var output = EOL;
       output += chalk.yellow('Ember Smooch') + ' has been installed. Please configure your smooch appToken in ' + chalk.green('config/environment.js') + EOL;

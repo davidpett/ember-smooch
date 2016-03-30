@@ -1,6 +1,5 @@
 import Smooch from 'npm:smooch';
-
-const config = this.container.lookup('config:environment');
+import config from 'ember-get-config';
 
 export function initialize() {
   Smooch.init(config.smoochAppToken);
