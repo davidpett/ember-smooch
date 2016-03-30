@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    smoochAppToken: '6sedsx77iibrqnal6rzzobnj7',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
