@@ -32,7 +32,7 @@ module.exports = {
     });
   },
 
-  addToConfig: function (key, value) {
+  addToConfig: function(key, value) {
     var self = this;
     return this.fileContains('config/environment.js', key + ':').then(function(contains) {
       if (contains) { return true; }
@@ -42,8 +42,8 @@ module.exports = {
     });
   },
 
-  fileContains: function (filePath, snippet) {
-    return readFile(filePath).then(function (fileContents) {
+  fileContains: function(filePath, snippet) {
+    return readFile(filePath).then(function(fileContents) {
       return fileContents.toString().indexOf(snippet) !== -1;
     });
   }
