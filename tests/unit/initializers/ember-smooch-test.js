@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import EmberSmoochInitializer from '../../../initializers/ember-smooch';
+import EmberSmoochInitializer from '../../../initializers/browser/ember-smooch';
 import { module, test } from 'qunit';
 
 let application;
