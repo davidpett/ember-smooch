@@ -2,7 +2,11 @@ import Smooch from 'npm:smooch';
 import config from 'ember-get-config';
 
 export function initialize() {
-  Smooch.init({ appToken: config.smoochAppToken });
+  if (config.smooch) {
+    Smooch.init(config.smooch);
+  } else {
+    console.warn('Please enter your Smooch appToken in config/environment.js');
+  }
 }
 
 export default {
