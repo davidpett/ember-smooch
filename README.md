@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/davidpett/ember-smooch.svg?branch=master)](https://travis-ci.org/davidpett/ember-smooch)
 [![npm version](https://badge.fury.io/js/ember-smooch.svg)](https://badge.fury.io/js/ember-smooch)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-smooch.svg)](http://emberobserver.com/addons/ember-smooch)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg](http://makeapullrequest.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![FastBoot Ready](https://img.shields.io/badge/FastBoot-not%20ready-red.svg)](http://ember-fastboot.com)
 # ember-smooch
 
