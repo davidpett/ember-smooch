@@ -2,7 +2,7 @@
 [![npm version](https://badge.fury.io/js/ember-smooch.svg)](https://badge.fury.io/js/ember-smooch)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-smooch.svg)](http://emberobserver.com/addons/ember-smooch)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![FastBoot Ready](https://img.shields.io/badge/FastBoot-not%20ready-red.svg)](http://ember-fastboot.com)
+[![FastBoot Ready](https://img.shields.io/badge/FastBoot-ready-brightgreen.svg)](http://ember-fastboot.com)
 # ember-smooch
 
 This wraps the web sdk for [smooch](http://smooch.io) and adds it to your project
