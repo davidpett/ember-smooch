@@ -1,15 +1,12 @@
 /* jshint node: true */
 'use strict';
 
-var filterInitializers = require('./lib/broccoli/filter-initializers');
+var filterInitializers = require('fastboot-filter-initializers');
 
 module.exports = {
   name: 'ember-smooch',
 
   preconcatTree: function(tree) {
-    if (process.env.EMBER_CLI_FASTBOOT) {
-      return filterInitializers(tree, 'browser', this.app.name);
-    }
-    return tree;
+    return filterInitializers(tree, this.app.name);
   }
 };
